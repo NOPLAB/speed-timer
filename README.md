@@ -10,6 +10,6 @@ cargo install cargo-espflash
 ```
 
 ```
-cargo espflash flash -b no-reset
-cargo espflash flash -b no-reset --no-stub
+cargo espflash flash -b no-reset -M
+cargo espflash flash -b no-reset -M --no-stub
 ```
