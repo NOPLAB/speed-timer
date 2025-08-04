@@ -3,7 +3,7 @@ use esp_idf_svc::hal::{delay::Delay, i2c::{I2cConfig, I2cDriver}, prelude::Perip
 use port_expander::Pcf8574;
 use esp_idf_svc::hal::prelude::*;
 
-static mut TIMER_COUNTER: u128 = 0;
+static mut TIMER_COUNTER: u64 = 0;
 
 fn main() -> anyhow::Result<()> {
     esp_idf_svc::sys::link_patches();
